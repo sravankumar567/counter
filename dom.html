@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: skyblue;
+            height: 100%;
+            width: 100%;
+
+        }
+        .container{
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+            margin-left: 40%;
+
+            border: 2px solid red;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .counter{
+            margin: 10px 20px;
+            font-size: 2.7rem;
+        }
+        .values{
+            font-size: 1.7rem;
+        }
+        .buttons{
+            margin: 40px 40px;
+            padding: 2px 3px;
+        }
+        .Decrease{
+            padding: 10x 10px;
+            margin: 5px 5px;
+            font-size: 1.3rem;
+        }
+        .reset{
+            padding: 3x 5px;
+            margin: 5px 5px;
+            font-size: 1.3rem;
+            
+
+        }
+        .increase{
+            padding: 3x 5px;
+            margin: 5px 5px;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="counter">Counter</h1>
+        <div class="values" id="value">0</div>
+        <div class="buttons">
+        <button class="Decrease" onclick="reduce()">Decrease</button>
+        <button class="reset" onclick="Reset()">Reset</button>
+        <button class="increase" onclick="Increase()">Increase</button>
+    </div>
+
+    </div>
+    <script>
+        let counterElement=document.getElementById('value');
+        function Increase(){
+            let previousvalue= counterElement.textContent;
+            let updatedvalue = parseInt(previousvalue) + 1;
+            counterElement.textContent=updatedvalue;
+            
+            
+            
+        }
+        function Reset(){
+            let previousvalue= counterElement.textContent;
+            let Updatedvalue = parseInt("0");
+            counterElement.textContent=Updatedvalue;
+            
+            
+            
+        }
+        function reduce(){
+            let previousvalue= counterElement.textContent;
+            let Updated_value = parseInt(previousvalue) - 1;
+            counterElement.textContent=Updated_value;
+            
+            
+            
+        }
+
+        
+    </script>
+    
+</body>
+</html>
