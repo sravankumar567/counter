@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desgin prototype</title>
+    <link rel='stylesheet' href="dark.css">
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    background-image: url(https://i.ibb.co/CPTdJHT/risen-wang-20j-X9b35r-M-unsplash.jpg) ; 
+  
+    
+    background-size: cover;
+    
+    background-position:0 -50px
+    
+
+    
+
+    
+}
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 12px;
+    background: transparent;
+    transition: all .50s ease;
+    background-image: url(https://i.ibb.co/CPTdJHT/risen-wang-20j-X9b35r-M-unsplash.jpg); 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.logo span{
+    color:skyblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+
+    
+}
+.navbar a{
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:white;
+    padding: 4px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+
+
+}
+.navbar a:hover{
+    color: chartreuse;
+    border: 2px solid black;
+    border-radius: 25%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar a.active{
+    color: chartreuse;
+    border: 2px solid black;
+    border-radius: 25%;
+
+}
+div.first{
+    margin-left: 100px;
+}
+.main{
+    display: grid;
+    
+    color: white;
+
+}
+.main a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(rgb(75, 109, 143));
+    color:white;
+    text-decoration: none;
+    
+
+
+}
+.main a:hover{
+    color: chartreuse;
+    transition: all 0.50s ease;
+    border: 2px solid black;
+    border-radius: 25%;
+    background-color: white;
+
+}
+.hello{
+    background-color: white;
+    top: 180%;
+    left: 0;
+    position: absolute;
+    padding-left: 20px;
+
+    
+    
+    
+    
+}
+.hello ul li{
+    padding: initial;
+    list-style: none;
+    
+
+
+}
+.hello ul li:hover{
+    padding-left: 50px;
+    
+    width: 100px;
+    transition: 1s;
+}
+.facebook{
+    background: blue;
+}
+.youtube{
+    background:red;
+}
+.instagram{
+    background:green;
+}
+.twitter{
+    background: lightblue;
+}
+.content{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:red;
+   
+    margin-top: 27%;
+    margin-left: 2%;
+    font-size: 3.6rem;
+    font-weight: 600;
+
+}
+div.explore {
+    margin-left: 18%;
+    padding: 50px 30px;
+}
+div.explore a { 
+    padding: 20px 10px;
+    margin: 30px 30px;
+
+}
+div.explore a.btn{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 500;
+    background-color:#E5E4DB;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 25%;
+    transition: all .50s ease-in-out ;
+    text-decoration: none;
+}
+div.explore a.learn{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 500;
+    background-color:#E5E4DB;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 25%;
+    transition: all .50s ease-in-out ;
+    text-decoration: none;
+    z-index: 1000;
+
+}
+div.explore a.btn:hover{
+    color: black;
+    background-color: darksalmon;
+    transition: all .50s ease-in-out;
+    font-family: cursive;
+   
+    
+        
+    }
+    
+    
+
+div.explore a.learn:hover{
+    background-color:darksalmon ;
+    color: black;
+    font-family: cursive;
+
+}
+.first{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    
+    
+    height: 500px;
+    width: 60%;
+    margin-left: 10px;
+    color:black;
+    margin-bottom: 9%;
+    
+}
+.first h1{
+    color: red;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 500;
+    display: inline-block;
+    
+}
+.last{
+    
+    background-color: white;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+}
+.last img{
+    margin-left: 150px;
+    height: 800px;
+    border: 40px solid white;
+}
+.last h{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: green;
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-right: 50px;
+    
+    
+
+}
+
+.last p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    margin-left:30px ;
+    margin-top: 100px;
+
+
+}
+#kumar{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+section{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    border: 10px solid white;
+    
+
+}
+#packages{
+    font-size: 2.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    padding-left: 30px;
+}
+#packages p{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+#packages img{
+    display: flex;
+    margin: 30px 30px;
+    border: 30px solid white;
+    margin-left: 80px;
+    padding-left: 70px;
+}
+
+
+.package1{
+    display: inline;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    
+}
+.package2{
+    display: inline;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.package3{
+    display: inline;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    
+    
+}
+.package1 img:hover{
+    animation: ease-out;
+    border: 2px solid red;
+}
+.package2 img:hover{
+    animation: ease-out;
+    border: 2px solid red;
+}
+.package3 img:hover{
+    animation: ease-out;
+    border: 2px solid red;
+}
+
+.footer-container{
+    background-color: gray;
+    width: 100%;
+    height: 200%;
+    padding-bottom: 200px;
+    
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    margin: 0,auto;
+    justify-content: center;
+    padding: 0 50px;
+    
+
+    
+}
+.last_logo p1{
+    display: inline-flex;
+
+}
+.footer-container-1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 400px;
+    margin-bottom: 0.5rem;
+    color: white;
+    margin-top: 50px;
+}
+.footer-container-2{
+    display: flex;
+    flex-direction: column;
+    padding-right: 400px;
+    margin-bottom: 0.5rem;
+    color: white;
+    margin-top: 50px;
+
+}
+.footer-container-3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    color: white;
+    margin-top: 50px;
+    
+}
+.footer-container-1 h1{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    
+}
+.footer-container-2 h1{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+.footer-container-3 h1{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.footer-container-1 a{
+    margin-bottom: 1rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+
+}  
+.footer-container-2 a{
+    margin-bottom: 1rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+
+}  
+.footer-container-3 a{
+    margin-bottom: 1rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+
+} 
+
+
+
+.footer-container-3 a:hover{
+    color: red;
+    transition: all 0.30s ease-out;
+}
+.footer-container-2 a:hover{
+    color: red;
+    transition: all 0.30s ease-out;
+}
+.footer-container-1 a:hover{
+    color: red;
+    transition: all 0.30s ease-out;
+}
+
+.footer_bottom{ color: #fff;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    padding-top: 20px;
+    
+
+}
+.footer_bottom p1{
+    font-size:1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+
+}
+.rights{
+    padding-top: 5%;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <header>
+        <a href="#" class="logo"><img src="https://i.ibb.co/DDBKsdc/gym-logo-vector-2654491.jpg" alt="gym-logo-vector-2654491" height="50px" width="60px"><span>SprinTon</span> </a>
+    <diV class="navigator">
+        <ul class="navbar">
+            <li>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Work Process</a>
+                <a href="#">Pricing Tables</a>
+                <a href="#">Blog Entires</a>
+                <a href="#">Contact us</a> 
+            </li>
+        </ul>
+    </diV>
+    
+    <div class="main">
+        <a href="#"><a href="https://ibb.co/4RKz3my"><img src="https://i.ibb.co/v4VpRw5/user-solid-24.png" alt="user-solid-24"><span>Sign In/Register</span></a></a>
+        <br>
+        
+        
+    </div>
+</header>
+<body>
+    <h1 class="content">PUSH<br> TO THE<br> PAIN <br><span>EVERY SINGLE DAY</span></h1>
+    <div class=" explore">
+        <a href="#" class="btn">Watch </a>
+        <a href="#" class="learn">join now</a>
+    </div>
+    <main>
+        <div class="first">
+            <h1>
+                About Us
+            </h1>
+            <p>Sprint On Fitness Studio is a prominent gym, located in the vicinity of Rajahmundry, Andhra Pradesh, facilitating multiple top quality training activities including Cardio, Strength, Aerobics-Zumba and Yoga in an exclusive multi-floored space. Our studio is offering customised Group and Personal sessions with highly skilled Trainers mentoring you with their expertise, footing you towards achieving your Fitness goals.
+
+We provide specialized programs tailored to suit your desired lifestyle transformation.
+
+</p>
+        </div>
+        <div class="last">
+            <h> Personal Trainers: </h>
+            
+            <p1>
+                In house well skilled Protractive experienced physical Trainers are on-board to mentor and guide to the reach your desired fitness level.
+
+                   A pick-and-choose option is available to all the aspirants to engage personal trainer for their customised fitness goals viz Body Building, Weight lifting, Kick-Boxing, TRX training, Athletes and Defence personal with everything they could dream for.
+            
+            
+                  <span class="read_moreText "> People work with personal trainers for many reasons. Whether you want to develop an individualized program to support weight loss goals, get in shape, or feel that you'd benefit from the additional accountability or instruction, a personal trainer can be a great resource.
+
+                         But sometimes, people are cautious about investing in a trainer. Cost can be an issue; some people might feel intimidated by working with a pro. But certified fitness professionals are trained to work with clients of all backgrounds and fitness levels. And many can work out package deals to make the service more affordable--</span>
+             </p1>
+             
+            
+            
+        
+            <img id="img1" onmouseover="settheimage() " onmouseout="retakeimage() " src="https://i.ibb.co/yBVL2Sk/edgar-chaparro-s-Hfo3-WOg-GTU-unsplash.jpg" alt="edgar-chaparro-s-Hfo3-WOg-GTU-unsplash" width="500px" height="500px">
+        </div>
+        
+    </main>
+    <section>
+        <h1 id="packages">Packages
+            <P>innovate and evolve. Create a stand-out experience.</P>
+        </h1>
+        
+        <img src="https://i.ibb.co/pX5pK8g/1st-package.png" alt="1st-package" class="package1">
+        <img src="https://i.ibb.co/KXHyQXn/2-nd-package.png" alt="2-nd-package" class="package2">
+        <img src="https://i.ibb.co/Qvj571k/3rd-package.png" alt="3rd-package" class="package3">
+
+    </section>
+    <div class="hello">
+        <ul>
+            <a href="#"><li class="facebook">
+                <img src="https://i.ibb.co/LrcPNjg/facebook-circle-logo-24.png" alt="facebook-circle-logo-24" height="50px" width="50px">
+            </li></a>  
+            <a href="#"><li class="instagram">
+                <img src="https://i.ibb.co/X334bvM/instagram-alt-logo-24.png" alt="instagram-alt-logo-24" border="0" height="50px" width="50px">
+            </li></a>
+            <a href="#"><li class="youtube">
+                <img src="https://i.ibb.co/HBbmZ3h/youtube-logo-24.png" alt="youtube-logo-24" height="50px" width="50x">
+                
+            </li></a> 
+            <a href="#"><li class="twitter">
+                <img src="https://i.ibb.co/DktDbN6/twitter-logo-24.png" alt="twitter-logo-24" height="50px" width="50px">
+                
+            </li></a>  
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer_bottom">
+                <h1>location:</h1>
+                <p1>R.S No:205/1, Beside MRR Residency, Venkateswara Nagar, J.N Road, Near Best Price, Rajahmundry-533107. Andhra Pradesh, India.</p1>
+                <div class="contact1">
+                    <a href="#"><p1 style="color: white; text-decoration: none;" >91+ 63059XXXX 
+                        <img src="https://i.ibb.co/M5njSRk/phone-call-solid-24.png" alt="phone-call-solid-24" style="padding-left:30px; ">
+                    </p1></a>
+                    <br>
+                    <a href="#"><p1 id="mail" style="color: #fff;text-decoration: none; " >SprinTonfitness@gmail.com 
+                        <img src="https://i.ibb.co/9T42msT/gmail-logo-24.png" alt="gmail-logo-24" style="padding-left:30px ;""  </p1></a>
+                </div>
+            
+            </div>
+        
+            
+            <div class="footer">
+                
+                <div class="footer-container-1">
+                <h1> About Us</h1>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of service</a>
+            </div>
+             
+         <div class="footer-container-2">
+            <h1> Contact us</h1>
+            <a href="#">jobs</a>
+            <a href="#">support</a>
+            <a href="#">contact</a>
+            <a href="#">sponsorship</a>
+            <a href="#">connect</a>
+         </div>
+        <div class="footer-container-3">
+        <h1> Social Media</h1>
+        <a href="#">facebook</a>
+        <a href="#">instagram</a>
+        <a href="#">youtube</a>
+        <a href="#">twitter</a>
+
+         </div>
+         <div class="rights">all rights reserved @ SprinTon</div>
+        
+        
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    </footer>
+    <script>
+        function settheimage(){
+        document.getElementById("img1").src="https://i.ibb.co/J3L3f7p/szabolcs-toth-QOMevot-GSe-E-unsplash.jpg";
+
+        }
+    function retakeimage(){
+        document.getElementById("img1").src="https://i.ibb.co/yBVL2Sk/edgar-chaparro-s-Hfo3-WOg-GTU-unsplash.jpg";
+
+    }
+    </script>
+    
+   
+</body>
+</html>
